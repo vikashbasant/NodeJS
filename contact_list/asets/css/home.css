@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#page-heading{
+    text-align: center;
+    margin-top: 25px;
+    color:grey;
+}
+#ulist{
+    
+    height: auto;
+    width: 35%;
+    border: 2px solid black;
+    padding-left: 0px;
+    margin-left: 32.5%;
+
+}
+
+#list{
+    text-align: center;
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    justify-content:space-between; 
+    border: 2px solid rgb(202, 27, 27);
+    margin: 3px 0px 0px 0px;
+    padding: 2px 2px 2px 2px;
+    background-color: rgb(221, 118, 34);
+    color: white;
+    
+}
+
+
+#list:hover{
+    background-color: grey;
+    color: aqua;
+}
+#img{
+    margin-top: 11px;
+}
+
+#form{
+    text-align: center;
+    
+}
+
+#form button{
+    border-radius: 9%;
+    background-color: crimson;
+    color: honeydew;
+    box-shadow: 2px 3px grey;;
+}
+
+#form button:hover{
+    background-color: indigo;
+    color: azure;
+}
+
+#form input:hover{
+    border: 2px solid indigo;
+}
+
+#list p{
+    margin-top: 10px;
+}
+
+.delete-button i{
+    text-align: center;
+    padding: 10px;
+}
+/* .delete-button a{
+    color: white;
+    background-color: red;
+} */
+.delete-button i:hover{
+    color:aqua;
+    
+}

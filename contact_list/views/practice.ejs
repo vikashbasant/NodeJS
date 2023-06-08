@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <h1>Playground</h1>
+
+        <!-- Using for loop: -->
+        <ul>
+            <% for (let i=1; i<11; i++) {%>
+                <li>
+                    <%= i %>
+                </li>
+            <%}%>
+        </ul>
+
+        <!-- if condition uses -->
+        <% if (true){ %> 
+            <h1>It's true!</h1>
+        <% }else{ %>
+            <p>It's false :( </p>
+        <% } %>
+
+        <!-- while condition uses -->
+        <% let x= 10; %>
+        <% while(x>0){ %> 
+            <%= x %>
+            <% x-- %>
+        <% } %>
+        
+        <!-- Array uses in EJS -->
+        <% let users = ['geddy', 'neil', 'alex']; %>
+        <%for( let i=0; i<users.length; i++){%>
+            <%= users[i] %>
+            <%= "\n" %>
+        <%}%>
+
+    </body>
+</html>
+
+
+
+<!-- when ever we need to print then: <%=  %>
+otherwise: <% %> -->

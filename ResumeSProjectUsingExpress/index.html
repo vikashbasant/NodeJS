@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> My Resume </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integgrity="sha384-B4dIYHKNBt8Bc12p+WWXckhzcIC0wtJAoU8YZTY5qE0Id1GseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <style>
+        body {
+    margin: 0px;
+    font-family: sans-serif;
+    font-size: 30px;
+}
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
+}
+
+/* Horizontal Lists */
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.nav-menu li a{
+	transition: color 0.5s, border-bottom 4s;
+}
+
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Name and Social Icons*/
+
+#name-social-container {
+    margin-top: 20vh;
+}
+
+#my-name {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+/*
+.social-icons li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}*/
+
+
+
+.social-icons li a i {
+	/*color: red;*/
+    font-size: 1rem;
+    padding: 8px;
+    border-radius: 50%;
+}
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*Section Classes*/
+section{
+    width: 100%;
+    /*height: 75vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n){
+    background-color: #9e9b9b29;
+}
+
+section:nth-child(2n + 1){
+    background-color: white;
+}
+
+section:target{
+    background-color: cyan;
+}
+
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    /*margin: 10px auto;*/
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.rem;
+}
+
+/*About Section*/
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+#image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -5rem;
+}
+#image img{
+    height: 100%;
+    width: 25vw;
+    border: 2px solid white;
+    box-shadow: 0px 0px 6px 4px gray;
+    border-radius: 50%;
+
+}
+
+#about p{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #ADABAD;
+    opacity: 1;
+}
+
+#about p strong{
+    color: #2857a4;
+    font-size: 700;
+}
+
+/*Skills Section*/
+
+.skills-display{
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.skill-progress{
+    width: 11rem;
+    height: 2.2rem;
+    background-color: lightgrey;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin: 25px;
+    overflow: hidden;
+    /*border: 2px solid black;*/
+}
+
+/*This is work for direct child*/
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px; 
+    box-shadow: 1px 1px 5px 2px #989882;
+}
+
+
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: sans-serif;
+    vertical-align: middle;
+}
+
+
+/* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 7%;
+    left: 50%;
+    border: 1px dashed #0096fa6b;
+    height: 75%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+
+@media screen and (max-width: 600px){
+    #timeline-divider {
+        position: absolute;
+        width: 0;
+        top: 7%;
+        left: 5%;
+        border: 1px dashed #0096fa6b;
+        height: 75%;
+        color: #433E3F;
+    }
+
+    .timeline-box {
+        padding: 5px;
+        width: 80%;
+        min-height: 150px;
+        position: relative;
+        left: 10.5% !important;
+        text-align: right;
+    }
+    /*.timeline-box:nth-child(2n) {
+        left: 10.5%;
+    }*/
+
+
+    .timeline-box::after{
+        left: -9% !important;
+    }
+    /*.timeline-box:nth-child(2n+1)::after{
+        left: -9%;
+    }
+    .timeline-box:nth-child(2n)::after{
+        left: -9%;
+    }*/
+    html{
+        font-size: 15px;
+    }
+ 
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+
+
+
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+/* Common Margin Classes */
+.text-right{
+    text-align: right;
+}
+/*Setting Background Color*/
+.m0 {
+    margin: 0;
+}
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+.mb-orange{
+    background-color: #ec4d1c;
+}
+.mb-teal{
+    background-color: #0b8176;
+}
+.mb-ligth-purple{
+    background-color: #93738c;
+}
+.mb-DarkSlateGrey{
+    background-color: #2f4f4f;
+}
+.mb-FireBrick{
+    background-color: #b22222;
+}
+.mb-LightSalmon{
+    background-color: #ffa07a;
+}
+/*Percentage Classes*/
+
+.sixty-five-percent{
+    width: 65%;
+    height: inherit;
+}
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+.seventy-five-percent{
+    width: 75%;
+    height: inherit;
+}
+.fifty-five-percent{
+    width: 55%;
+    height: inherit;
+}
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+/*Contact Section*/
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+    </style>
+
+</head>
+<body>
+
+    <header id="body-header">
+        <nav>
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <a href="#" > Home </a>
+                </li>
+                <li>
+                    <a href="#about" > About </a>
+                </li>
+                <li>
+                    <a href="#skills" > Skills </a>
+                </li>
+                <li>
+                    <a href="#experience" > Experience </a>
+                </li>
+                <li>
+                    <a href="#education" > Education </a>
+                </li>
+                <li>
+                    <a href="#portfolio" > Portfolio </a>
+                </li>
+                <li>
+                    <a href="#contact" > Contact </a>
+                </li>
+            </ul>
+            
+           
+
+        </nav>
+        <div id="name-social-container">
+            
+            <div class="text-center">
+                <h1 id="my-name">
+                    Vikash Kumar Basant
+                </h1>
+            </div>
+            
+            <div>
+                <ul class="horizontal-list text-center social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/basantvikash360/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/15463831/61-vikash-basant">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/BasantVikash">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/vikash.basant.77">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.quora.com/profile/Vikash-Basant">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section id="about">
+            <div id="image" class="text-center">
+                <img src="MyImage.jpg">
+            </div>
+            <p>
+                Hello, My name is <strong>Vikash Kumar Basant </strong> and I grew up on middle family. Life was simple. I am a person who is positive about every aspect of life. I feel that I could be a valuable asset to your team, And I bring to the table all of the skills that you require in an <Strong> programmer or Devloper</strong>. As a <strong>Full Stack WebDevloper. </strong>
+                
+            </p>
+        </section>
+
+        <section id="skills">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>SKILLS</span>
+                </span>
+            </h1>
+            <div class="skills-display">
+                 <div class="skill-progress">
+                     <div class="sixty-five-percent mb-blue">
+                         <div class="skill-name">
+                             <span>
+                                 Python
+                             </span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="skill-progress">
+                     <div class="eighty-five-percent mb-orange">
+                         <div class="skill-name">
+                             <span>
+                                 Java
+                             </span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="skill-progress">
+                     <div class="eighty-five-percent mb-teal">
+                         <div class="skill-name">
+                             <span>
+                                 HTML
+                             </span>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="skill-progress">
+                     <div class="eighty-five-percent mb-ligth-purple">
+                         <div class="skill-name">
+                             <span>
+                                 CSS
+                             </span>
+                         </div>
+                     </div>
+                 </div>
+
+                 <div class="skill-progress">
+                    <div class="seventy-five-percent mb-DarkSlateGrey">
+                        <div class="skill-name">
+                            <span>
+                                JavaScript
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-progress">
+                    <div class="sixty-five-percent mb-FireBrick">
+                        <div class="skill-name">
+                            <span>
+                                NodeJs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-progress">
+                    <div class="fifty-five-percent mb-LightSalmon">
+                        <div class="skill-name">
+                            <span>
+                                MongoDB
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="experience">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-briefcase"></i>
+                </span>
+                <span> Work Experience </span>
+            </h1>
+
+            <div class= "timeline" >
+                
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+        
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+            <div class= "timeline" >
+                
+                <div class="timeline-box ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name"> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+        
+                </div>
+
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name"> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name"> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div class="timeline-box">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name"> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-shuttle-van"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span> Portfolio </span>
+            </h1>
+            <div id="portfolio-container">
+
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1 class="section-heading mb50px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contact </span>
+            </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    <p> We like to create things with fun, open-minded people. Feel free to Say hello! </p>
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Burdwan, Kolkata</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>8789782803</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>basantvikash360@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center social-icons">
+
+                <ul class="horizontal-list">
+
+                    <li>
+                        <a href="https://www.linkedin.com/in/basantvikash360/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://stackoverflow.com/users/15463831/61-vikash-basant" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/BasantVikash" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/vikash.basant.77">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.quora.com/profile/Vikash-Basant" target="_blank">
+                            <i class="fab fa-quora"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
